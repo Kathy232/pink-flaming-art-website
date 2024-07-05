@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Flaming Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .hero {
+            text-align: center;
+            color: white;
+            background-color: #d2386c; /* Ciemniejszy różowy */
+            padding: 50px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery .item {
+            position: relative;
+        }
+
+        .gallery .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery .item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery .overlay a {
+            color: white;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="container">
+                <h1>Pink Flaming Art</h1>
+                <ul>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h2>Witaj u Pink Flaming Art Studio!</h2>
+                <p>Cześć! Nazywam się Katarzyna Janek i jestem absolwentką Polsko-Japońskiej Akademii Technik Komputerowych na kierunku Grafika projektowa. Moją pasją od najmłodszych lat jest malarstwo i grafika komputerowa. Specjalizuję się w tworzeniu niepowtarzalnych logo, identyfikacji wizualnej, plakatów oraz zaproszeń na różnorodne imprezy. Moja przygoda z grafiką to podróż w poszukiwaniu nowych form wyrazu i kreatywnych rozwiązań. Zachęcam Cię do odkrycia, jak mogę wzbogacić wizualny wymiar Twojego projektu. Razem możemy stworzyć coś naprawdę wyjątkowego!</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="item">
+                    <img src="4.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="4.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1a.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="1a.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1b.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="1b.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1c.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="1c.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1d.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="1d.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1e.jpeg" alt="Projekt 1">
+                    <div class="overlay">
+                        <a href="1e.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="1.jpeg" alt="Projekt 2">
+                    <div class="overlay">
+                        <a href="1.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="2.jpeg" alt="Projekt 3">
+                    <div class="overlay">
+                        <a href="2.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="6.jpeg" alt="Projekt 4">
+                    <div class="overlay">
+                        <a href="6.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="3.jpeg" alt="Projekt 5">
+                    <div class="overlay">
+                        <a href="3.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="8.jpeg" alt="Projekt 6">
+                    <div class="overlay">
+                        <a href="8.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="9.jpeg" alt="Projekt 7">
+                    <div class="overlay">
+                        <a href="9.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="10.jpeg" alt="Projekt 8">
+                    <div class="overlay">
+                        <a href="10.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="11.jpeg" alt="Projekt 9">
+                    <div class="overlay">
+                        <a href="11.jpeg" target="_blank"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <!-- Puste miejsca na 10 dodatkowych obrazków -->
+                <div class="item"><img src="1aa.jpeg" alt="Projekt9"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>O mnie</h2>
+            <p>Studia pozwoliły mi rozwinąć skrzydła w grafice projektowej - uczestniczyłam w wielu wydarzeniach branżowych, a także byłam wystawcą na targach ślubnych gdzie mogłam prezentować swoje dotychczasowe prace. Poza samym projektem ważna jest dla mnie dobra komunikacja z klientem, zrozumienie potrzeb i oczekiwań.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Masz pytania lub chcesz się skontaktować? Napisz do mnie na adres:</p>
+            <p><a href="mailto:kjanekart@gmail.com">kjanekart@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100083089950089&locale=pl_PL" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.google.com/maps?q=Pink+Flaming+Art,+Kochanowskiego,+05-091+Z%C4%85bki&ftid=0x471ecf685f3b39b5:0xefc1bdee29ec8fdd&entry=gps&lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTE5LjEuNjYwNTAYACCs3wEqWiw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICUEw%3D&g_st=com.google.maps.preview.copy" target="_blank"><i class="fab fa-google"></i></a>
+                <a href="https://www.instagram.com/pink_flaming_art?igsh=a2Vjc3premk4em1h&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- Dodaj więcej ikon mediów społecznościowych według potrzeb -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Opcjonalnie: Skrypty JavaScript -->
+</body>
+</html>
+

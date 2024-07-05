@@ -1,0 +1,170 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalne style strony */
+body {
+    font-family: 'Segoe Script', cursive; /* Wybrałem czcionkę 'Segoe Script' jako bardziej artystyczną */
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Lżejszy szary */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styl nagłówka */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Zwiększyłem rozmiar czcionki nagłówka */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d2386c; /* Ciemniejszy różowy */
+}
+
+/* Styl sekcji hero */
+.hero {
+    text-align: center;
+    color: white;
+    background-color: #d2386c; /* Ciemniejszy różowy */
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.8rem; /* Zwiększyłem rozmiar czcionki tytułu sekcji hero */
+}
+
+.hero p {
+    font-size: 1.3rem; /* Zwiększyłem rozmiar czcionki tekstu sekcji hero */
+    margin-top: 20px;
+}
+
+/* Styl galerii */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery .item {
+    position: relative;
+}
+
+.gallery .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery .item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery .overlay a {
+    color: white;
+    font-size: 24px;
+}
+
+/* Styl sekcji o mnie */
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Styl stopki */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #d2386c; /* Ciemniejszy różowy */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Zwiększyłem rozmiar czcionki nagłówka na mniejszych ekranach */
+    }
+
+    .hero h2 {
+        font-size: 2.5rem; /* Zwiększyłem rozmiar czcionki tytułu sekcji hero na mniejszych ekranach */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Zwiększyłem rozmiar czcionki tekstu sekcji hero na mniejszych ekranach */
+    }
+
+    .gallery .item img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
