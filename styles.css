@@ -1,3 +1,4 @@
+
 /* Resetowanie domyślnych stylów */
 * {
     margin: 0;
@@ -7,10 +8,17 @@
 
 /* Globalne style strony */
 body {
-    font-family: 'Segoe Script', cursive; /* Wybrałem czcionkę 'Segoe Script' jako bardziej artystyczną */
+    font-family: 'Times New Roman', Times, serif; /* Ustawiono czcionkę na 'Times New Roman' */
     line-height: 1.6;
     background-color: #f0f0f0; /* Lżejszy szary */
     color: #333;
+}
+
+/* Dodanie wsparcia dla polskich znaków */
+@font-face {
+    font-family: 'Times New Roman';
+    src: local('Times New Roman'), local('Times'), serif;
+    unicode-range: U+0104-0105, U+0106-0107, U+0118-0119, U+0141-0142, U+0143-0144, U+015A-015B, U+0179-017A, U+017B-017C; /* Zakres Unicode dla polskich znaków */
 }
 
 .container {
@@ -140,7 +148,7 @@ footer p {
     font-size: 24px;
 }
 
-.social-links a:hover {
+social-links a:hover {
     color: #d2386c; /* Ciemniejszy różowy */
 }
 
@@ -167,4 +175,3 @@ footer p {
         height: 100%;
     }
 }
-
