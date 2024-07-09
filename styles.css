@@ -1,63 +1,19 @@
-
-/* Resetowanie domyślnych stylów */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Globalne style strony */
 body {
-    font-family: 'Times New Roman', Times, serif; /* Ustawiono czcionkę na 'Times New Roman' */
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Lżejszy szary */
-    color: #333;
 }
 
-/* Dodanie wsparcia dla polskich znaków */
-@font-face {
-    font-family: 'Times New Roman';
-    src: local('Times New Roman'), local('Times'), serif;
-    unicode-range: U+0104-0105, U+0106-0107, U+0118-0119, U+0141-0142, U+0143-0144, U+015A-015B, U+0179-017A, U+017B-017C; /* Zakres Unicode dla polskich znaków */
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Styl nagłówka */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: white;
+    color: #d2386c; /* Różowy kolor tekstu */
 }
 
 header h1 {
-    font-size: 2.5rem; /* Zwiększyłem rozmiar czcionki nagłówka */
+    font-size: 2.5em; /* Większy rozmiar tekstu nagłówka */
+    margin: 0;
+    padding: 20px 0;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #d2386c; /* Ciemniejszy różowy */
-}
-
-/* Styl sekcji hero */
 .hero {
     text-align: center;
     color: white;
@@ -66,15 +22,14 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 2.8rem; /* Zwiększyłem rozmiar czcionki tytułu sekcji hero */
+    font-size: 2em;
 }
 
 .hero p {
-    font-size: 1.3rem; /* Zwiększyłem rozmiar czcionki tekstu sekcji hero */
-    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.8; /* Większe odstępy między wierszami tekstu */
 }
 
-/* Styl galerii */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -114,23 +69,55 @@ header nav ul li a:hover {
     font-size: 24px;
 }
 
-/* Styl sekcji o mnie */
-#about {
-    background-color: #fff;
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
     padding: 60px 0;
 }
 
-#about h2 {
-    text-align: center;
-    margin-bottom: 30px;
+section h2 {
+    font-size: 2em;
 }
 
-#about p {
-    text-align: justify;
-    font-size: 1.2rem;
+section p {
+    font-size: 1.2em;
+    line-height: 1.8; /* Większe odstępy między wierszami tekstu */
 }
 
-/* Styl stopki */
 footer {
     background-color: #333;
     color: white;
@@ -138,8 +125,13 @@ footer {
     padding: 20px 0;
 }
 
-footer p {
-    margin-bottom: 10px;
+footer h2 {
+    font-size: 2em;
+}
+
+footer p, footer a {
+    font-size: 1.2em;
+    line-height: 1.8; /* Większe odstępy między wierszami tekstu */
 }
 
 .social-links a {
@@ -148,30 +140,3 @@ footer p {
     font-size: 24px;
 }
 
-social-links a:hover {
-    color: #d2386c; /* Ciemniejszy różowy */
-}
-
-/* Media queries */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 0;
-    }
-
-    header h1 {
-        font-size: 2rem; /* Zwiększyłem rozmiar czcionki nagłówka na mniejszych ekranach */
-    }
-
-    .hero h2 {
-        font-size: 2.5rem; /* Zwiększyłem rozmiar czcionki tytułu sekcji hero na mniejszych ekranach */
-    }
-
-    .hero p {
-        font-size: 1rem; /* Zwiększyłem rozmiar czcionki tekstu sekcji hero na mniejszych ekranach */
-    }
-
-    .gallery .item img {
-        width: 100%;
-        height: 100%;
-    }
-}
